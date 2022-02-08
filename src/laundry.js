@@ -10,13 +10,13 @@
      //declare 2 variables (a maxCount & an empty array to hold values).
     let maxPair = 0;  
     let singlePair = [];
-    //sort through clean & dirty piles in ascending order.
+    //sort through clean & dirty piles in ascending order...
     cleanPile = cleanPile.sort((a, b) => {
       return a - b;
     })
     dirtyPile = dirtyPile.sort((a, b) => {
       return a - b;
-    })
+    });
     //loop through cleanPile to find pairs & splice 'em out.
     for (let i = 0; i < cleanPile.length; i++) {
       if (cleanPile[i] === cleanPile[i + 1]) {
