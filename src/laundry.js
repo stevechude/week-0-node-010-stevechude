@@ -6,6 +6,7 @@
  * @param {number[]} dirtyPile
  * @returns {number}
  */
+
  function getMaxPairs(noOfWashes, cleanPile, dirtyPile) {
      //declare 2 variables (a maxCount & an empty array to hold values).
     let countPair = 0;  
@@ -48,5 +49,6 @@
     }
     return countPair;
   }
-  
+
+
   module.exports = getMaxPairs;
